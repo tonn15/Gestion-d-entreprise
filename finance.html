@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Finance d'entreprise | Gestion d'entreprise</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body class="text-slate-900">
+  <div class="site-shell">
+    <header class="site-header p-6 lg:p-8">
+      <div class="flex flex-col gap-6">
+        <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-4">
+          <div>
+            <p class="chip">Module 3. Finance d'entreprise</p>
+            <h1 class="mt-4 text-4xl md:text-5xl font-black tracking-tight text-slate-ink leading-tight">Piloter la trésorerie, construire un budget et analyser la rentabilité d'un projet.</h1>
+            <p class="mt-4 max-w-4xl text-lg text-slate-600">Ce chapitre apprend à parler le langage des chiffres: cash, marge, seuil de rentabilité, financement et décision d'investissement.</p>
+          </div>
+          <nav class="site-nav">
+            <a class="nav-link" data-nav href="index.html">Accueil</a>
+            <a class="nav-link" data-nav href="parcours.html">Parcours complet</a>
+            <a class="nav-link" data-nav href="bases-entreprise.html">Bases</a>
+            <a class="nav-link" data-nav href="comptabilite.html">Comptabilité</a>
+            <a class="nav-link" data-nav href="finance.html">Finance</a>
+            <a class="nav-link" data-nav href="marketing.html">Marketing</a>
+          </nav>
+        </div>
+
+        <div class="grid md:grid-cols-4 gap-3">
+          <div class="rounded-2xl border border-slate-200 bg-slate-50 p-4"><div class="text-sm font-bold text-blue-700">Objectif</div><p class="mt-2 text-sm text-slate-600 leading-7">Comprendre comment l'argent circule dans l'entreprise.</p></div>
+          <div class="rounded-2xl border border-slate-200 bg-slate-50 p-4"><div class="text-sm font-bold text-emerald-700">Méthode</div><p class="mt-2 text-sm text-slate-600 leading-7">Prévoir, mesurer, comparer et corriger.</p></div>
+          <div class="rounded-2xl border border-slate-200 bg-slate-50 p-4"><div class="text-sm font-bold text-amber-700">Formules</div><p class="mt-2 text-sm text-slate-600 leading-7">Budget, marge, seuil de rentabilité, retour sur investissement.</p></div>
+          <div class="rounded-2xl border border-slate-200 bg-slate-50 p-4"><div class="text-sm font-bold text-slate-700">Usage</div><p class="mt-2 text-sm text-slate-600 leading-7">Décider avec prudence et méthode.</p></div>
+        </div>
+      </div>
+    </header>
+
+    <main class="mt-8 grid lg:grid-cols-[320px_1fr] gap-6">
+      <aside class="space-y-6">
+        <section class="panel p-5">
+          <h2 class="section-title">Plan du chapitre</h2>
+          <ol class="mt-4 space-y-3 text-sm text-slate-600 leading-7">
+            <li class="rounded-2xl border border-slate-200 bg-slate-50 p-4">1. La trésorerie</li>
+            <li class="rounded-2xl border border-slate-200 bg-slate-50 p-4">2. Le budget</li>
+            <li class="rounded-2xl border border-slate-200 bg-slate-50 p-4">3. La rentabilité</li>
+            <li class="rounded-2xl border border-slate-200 bg-slate-50 p-4">4. Le seuil de rentabilité</li>
+            <li class="rounded-2xl border border-slate-200 bg-slate-50 p-4">5. Les investissements</li>
+            <li class="rounded-2xl border border-slate-200 bg-slate-50 p-4">6. L'analyse financière</li>
+          </ol>
+        </section>
+
+        <section class="panel p-5">
+          <h2 class="section-title">Cheat sheet</h2>
+          <div class="mt-4 space-y-3 text-sm text-slate-600 leading-7">
+            <p><strong>Trésorerie</strong> = argent disponible immédiatement.</p>
+            <p><strong>Budget</strong> = prévision chiffrée de l'activité.</p>
+            <p><strong>Marge</strong> = différence entre ventes et coûts concernés.</p>
+            <p><strong>Rentabilité</strong> = capacité à générer du résultat.</p>
+            <p><strong>Seuil de rentabilité</strong> = niveau de ventes pour couvrir les charges.</p>
+          </div>
+        </section>
+
+        <section class="panel p-5">
+          <h2 class="section-title">Sources utiles</h2>
+          <div class="mt-4 space-y-3 text-sm leading-7">
+            <a class="block rounded-2xl border border-slate-200 bg-slate-50 p-4 hover:border-blue-300" target="_blank" rel="noreferrer" href="https://bpifrance-creation.fr/encyclopedie/piloter-lentreprise/finance-pilotage-economique/tableaux-bord-gestion">Tableaux de bord de gestion - Bpifrance</a>
+            <a class="block rounded-2xl border border-slate-200 bg-slate-50 p-4 hover:border-blue-300" target="_blank" rel="noreferrer" href="https://entreprendre.service-public.fr/vosdroits/R14668">Compte fiscal en ligne - Service Public</a>
+          </div>
+        </section>
+      </aside>
+
+      <section class="space-y-6">
+        <article class="panel p-6 lg:p-8">
+          <h2 class="section-title">1. La trésorerie</h2>
+          <div class="prose-lite mt-4">
+            <p>La trésorerie est l'oxygène de l'entreprise. Elle représente l'argent immédiatement disponible pour payer les salaires, les fournisseurs, les impôts et les charges courantes.</p>
+            <p>Une entreprise rentable peut échouer si elle manque de trésorerie. L'erreur classique consiste à confondre résultat comptable et disponibilité de cash.</p>
+            <p>Le pilotage de trésorerie suppose un suivi des encaissements et décaissements, des délais clients et fournisseurs, et des besoins à court terme.</p>
+          </div>
+        </article>
+
+        <article class="panel p-6 lg:p-8">
+          <h2 class="section-title">2. Le budget</h2>
+          <div class="mt-4 overflow-x-auto">
+            <table class="data-table">
+              <thead>
+                <tr><th>Élément</th><th>Contenu</th><th>Utilité</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Recettes</td><td>Ventes, services, subventions</td><td>Prévoir les entrées d'argent</td></tr>
+                <tr><td>Charges fixes</td><td>Loyer, salaires, assurance</td><td>Mesurer le socle de dépenses</td></tr>
+                <tr><td>Charges variables</td><td>Matières, transport, commissions</td><td>Suivre ce qui évolue avec l'activité</td></tr>
+                <tr><td>Trésorerie</td><td>Solde disponible</td><td>Éviter les tensions de paiement</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="mt-4 text-sm text-slate-600 leading-7">Le budget sert à anticiper. Il ne doit pas être vu comme une simple prévision administrative, mais comme un outil de pilotage et de décision.</p>
+          <div class="mt-5 overflow-x-auto">
+            <table class="data-table">
+              <thead><tr><th>Budget</th><th>Question</th><th>Exemple</th></tr></thead>
+              <tbody>
+                <tr><td>Ventes</td><td>Combien peut-on vendre ?</td><td>Nombre d'unités x prix moyen</td></tr>
+                <tr><td>Charges fixes</td><td>Que doit-on payer quoi qu'il arrive ?</td><td>Loyer, abonnements, salaires</td></tr>
+                <tr><td>Charges variables</td><td>Qu'est-ce qui évolue avec l'activité ?</td><td>Achats, commissions, transport</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+
+        <article class="panel p-6 lg:p-8">
+          <h2 class="section-title">3. Rentabilité et seuil de rentabilité</h2>
+          <div class="mt-4 grid xl:grid-cols-[1fr_1fr] gap-6">
+            <div class="rounded-3xl border border-slate-200 bg-slate-50 p-5">
+              <h3 class="font-bold text-slate-900">Rentabilité</h3>
+              <p class="mt-2 text-sm text-slate-600 leading-7">La rentabilité mesure la capacité à produire un résultat positif par rapport aux moyens engagés. On s'intéresse à la marge, au résultat et au rendement du capital.</p>
+            </div>
+            <div class="rounded-3xl border border-slate-200 bg-white p-5">
+              <h3 class="font-bold text-slate-900">Seuil de rentabilité</h3>
+              <p class="mt-2 text-sm text-slate-600 leading-7">Il indique le niveau de chiffre d'affaires nécessaire pour couvrir les charges fixes et variables. En dessous, l'entreprise perd de l'argent; au-dessus, elle commence à créer du résultat.</p>
+            </div>
+          </div>
+          <div class="mt-5 rounded-2xl border border-slate-200 bg-slate-50 p-4 text-sm text-slate-600 leading-7">
+            <p class="font-bold text-slate-900">Formule utile</p>
+            <p class="mt-2">Seuil de rentabilité = charges fixes / taux de marge sur coût variable.</p>
+            <p>Le taux de marge sur coût variable = (chiffre d'affaires - coûts variables) / chiffre d'affaires.</p>
+          </div>
+          <div class="mt-5 overflow-x-auto">
+            <table class="data-table">
+              <thead><tr><th>Notion</th><th>Interprétation</th><th>Décision</th></tr></thead>
+              <tbody>
+                <tr><td>Marge brute</td><td>Ce qui reste après coûts directs</td><td>Optimiser prix ou approvisionnement</td></tr>
+                <tr><td>Résultat</td><td>Profit ou perte finale</td><td>Réduire coûts ou augmenter ventes</td></tr>
+                <tr><td>Cash-flow</td><td>Flux de trésorerie</td><td>Gérer les décalages de paiement</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+
+        <article class="panel p-6 lg:p-8">
+          <h2 class="section-title">4. Investissements</h2>
+          <div class="mt-4 grid md:grid-cols-2 gap-4">
+            <div class="rounded-2xl border border-slate-200 bg-slate-50 p-4"><h3 class="font-bold">Investir pour produire</h3><p class="mt-2 text-sm text-slate-600 leading-7">Machine, logiciel, local, véhicule, outil digital.</p></div>
+            <div class="rounded-2xl border border-slate-200 bg-slate-50 p-4"><h3 class="font-bold">Évaluer le projet</h3><p class="mt-2 text-sm text-slate-600 leading-7">Coût, durée, flux de trésorerie, risque, capacité de remboursement.</p></div>
+          </div>
+          <p class="mt-4 text-sm text-slate-600 leading-7">Un bon investissement ne se juge pas seulement à son prix. Il faut regarder ce qu'il permet de gagner, d'économiser, de sécuriser ou d'accélérer.</p>
+        </article>
+
+        <article class="panel p-6 lg:p-8">
+          <h2 class="section-title">5. Cas pratique de pilotage</h2>
+          <div class="mt-4 grid xl:grid-cols-[1fr_1fr] gap-6">
+            <div class="rounded-3xl border border-slate-200 bg-slate-50 p-5">
+              <h3 class="font-bold text-slate-900">Situation</h3>
+              <p class="mt-2 text-sm text-slate-600 leading-7">Une petite entreprise vend beaucoup, mais ses clients paient à 60 jours. Elle doit payer ses fournisseurs au comptant.</p>
+            </div>
+            <div class="rounded-3xl border border-slate-200 bg-white p-5">
+              <h3 class="font-bold text-slate-900">Analyse attendue</h3>
+              <p class="mt-2 text-sm text-slate-600 leading-7">Le problème n'est pas forcément le résultat, mais le délai d'encaissement. Il faut prévoir un budget de trésorerie, négocier les délais ou financer le besoin de roulement.</p>
+            </div>
+          </div>
+          <div class="mt-5 rounded-3xl border border-slate-200 bg-slate-50 p-5">
+            <p class="font-bold text-slate-900">Exercice</p>
+            <p class="mt-2 text-sm text-slate-600 leading-7">Expliquez en quelques lignes la différence entre bénéfice, marge et trésorerie. Puis donnez un exemple de tension financière possible.</p>
+            <p class="mt-3 text-sm text-slate-600 leading-7">Correction: la marge est un écart entre ventes et coûts; le bénéfice est un résultat global; la trésorerie est l'argent disponible immédiatement.</p>
+          </div>
+          <div class="mt-5 rounded-3xl border border-slate-200 bg-white p-5">
+            <p class="font-bold text-slate-900">Cheat sheet financier</p>
+            <p class="mt-2 text-sm text-slate-600 leading-7">Le financeur veut des chiffres crédibles: hypothèses de vente, charges, besoin en fonds de roulement, seuil de rentabilité et plan de financement. Une bonne analyse financière compare toujours le prévu, le réalisé et la tendance.</p>
+          </div>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <script src="assets/js/site.js"></script>
+</body>
+</html>

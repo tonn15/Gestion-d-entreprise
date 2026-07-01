@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contrôle de gestion | Gestion d'entreprise</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body class="text-slate-900">
+  <div class="site-shell">
+    <header class="site-header p-6 lg:p-8">
+      <div class="flex flex-col gap-6">
+        <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-4">
+          <div>
+            <p class="chip">Module 11. Contrôle de gestion</p>
+            <h1 class="mt-4 text-4xl md:text-5xl font-black tracking-tight text-slate-ink leading-tight">Construire des tableaux de bord, suivre des KPI, calculer les coûts et analyser les écarts.</h1>
+            <p class="mt-4 max-w-4xl text-lg text-slate-600">Le contrôle de gestion transforme les chiffres en pilotage. Il sert à guider l'action, pas seulement à produire des rapports.</p>
+          </div>
+          <nav class="site-nav">
+            <a class="nav-link" data-nav href="index.html">Accueil</a>
+            <a class="nav-link" data-nav href="parcours.html">Parcours complet</a>
+            <a class="nav-link" data-nav href="bases-entreprise.html">Bases</a>
+            <a class="nav-link" data-nav href="finance.html">Finance</a>
+            <a class="nav-link" data-nav href="controle-gestion.html">Contrôle de gestion</a>
+            <a class="nav-link" data-nav href="projet-final.html">Projet final</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="mt-8 grid lg:grid-cols-[320px_1fr] gap-6">
+      <aside class="space-y-6">
+        <section class="panel p-5">
+          <h2 class="section-title">Plan du chapitre</h2>
+          <ol class="mt-4 space-y-3 text-sm text-slate-600 leading-7">
+            <li class="rounded-2xl border border-slate-200 bg-slate-50 p-4">1. Tableaux de bord</li>
+            <li class="rounded-2xl border border-slate-200 bg-slate-50 p-4">2. KPI</li>
+            <li class="rounded-2xl border border-slate-200 bg-slate-50 p-4">3. Calcul des coûts</li>
+            <li class="rounded-2xl border border-slate-200 bg-slate-50 p-4">4. Budgets</li>
+            <li class="rounded-2xl border border-slate-200 bg-slate-50 p-4">5. Analyse des écarts</li>
+          </ol>
+        </section>
+
+        <section class="panel p-5">
+          <h2 class="section-title">Cheat sheet</h2>
+          <div class="mt-4 space-y-3 text-sm text-slate-600 leading-7">
+            <p><strong>Tableau de bord</strong> = synthèse d'indicateurs utiles.</p>
+            <p><strong>KPI</strong> = indicateur clé de performance.</p>
+            <p><strong>Coût</strong> = charge affectée à un produit, service ou activité.</p>
+            <p><strong>Budget</strong> = référence chiffrée.</p>
+            <p><strong>Écart</strong> = différence entre prévu et réalisé.</p>
+          </div>
+        </section>
+      </aside>
+
+      <section class="space-y-6">
+        <article class="panel p-6 lg:p-8">
+          <h2 class="section-title">1. Tableaux de bord</h2>
+          <div class="prose-lite mt-4">
+            <p>Un tableau de bord résume l'essentiel. Il ne doit pas tout montrer, mais montrer ce qui sert à décider rapidement. Il combine quelques indicateurs clés, une période de suivi et une lecture simple.</p>
+            <p>Le bon tableau de bord est lisible, court et orienté vers l'action. Il est construit pour le manager, pas pour la décoration.</p>
+          </div>
+        </article>
+
+        <article class="panel p-6 lg:p-8">
+          <h2 class="section-title">2. KPI</h2>
+          <div class="mt-4 overflow-x-auto">
+            <table class="data-table">
+              <thead>
+                <tr><th>KPI</th><th>Mesure</th><th>Pourquoi c'est utile</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>CA</td><td>Chiffre d'affaires</td><td>Suivre l'activité commerciale</td></tr>
+                <tr><td>Marge</td><td>Différence entre ventes et coûts</td><td>Voir la création de valeur</td></tr>
+                <tr><td>Taux de conversion</td><td>Visites transformées en ventes</td><td>Mesurer l'efficacité commerciale</td></tr>
+                <tr><td>Taux de rupture</td><td>Stock indisponible</td><td>Contrôler l'organisation opérationnelle</td></tr>
+                <tr><td>Satisfaction</td><td>Avis, notes, retours</td><td>Lire la qualité perçue</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="mt-4 text-sm text-slate-600 leading-7">Un KPI doit être simple, mesurable, comparable dans le temps et relié à une décision. Sinon, il devient un chiffre inutile.</p>
+        </article>
+
+        <article class="panel p-6 lg:p-8">
+          <h2 class="section-title">3. Calcul des coûts</h2>
+          <div class="mt-4 grid xl:grid-cols-[1fr_1fr] gap-6">
+            <div class="rounded-3xl border border-slate-200 bg-slate-50 p-5">
+              <h3 class="font-bold text-slate-900">Coûts directs</h3>
+              <p class="mt-2 text-sm text-slate-600 leading-7">Charges que l'on peut rattacher clairement à un produit ou service: matière, main-d'oeuvre directe, transport spécifique.</p>
+            </div>
+            <div class="rounded-3xl border border-slate-200 bg-white p-5">
+              <h3 class="font-bold text-slate-900">Coûts indirects</h3>
+              <p class="mt-2 text-sm text-slate-600 leading-7">Charges communes à plusieurs activités: loyer, direction, administratif, énergie, outils partagés.</p>
+            </div>
+          </div>
+          <p class="mt-4 text-sm text-slate-600 leading-7">Le calcul des coûts sert à fixer les prix, suivre la rentabilité par produit, repérer les dérives et arbitrer entre plusieurs activités.</p>
+          <div class="mt-5 overflow-x-auto">
+            <table class="data-table">
+              <thead><tr><th>Méthode</th><th>Usage</th><th>Exemple</th></tr></thead>
+              <tbody>
+                <tr><td>Coût complet</td><td>Attribuer toutes les charges</td><td>Prix de revient d'un produit</td></tr>
+                <tr><td>Coût variable</td><td>Suivre ce qui bouge avec l'activité</td><td>Décision court terme</td></tr>
+                <tr><td>Coût de revient</td><td>Mesurer le coût final d'un bien/service</td><td>Fixation du prix</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+
+        <article class="panel p-6 lg:p-8">
+          <h2 class="section-title">4. Budgets et écarts</h2>
+          <div class="mt-4 grid xl:grid-cols-[1fr_1fr] gap-6">
+            <div class="rounded-3xl border border-slate-200 bg-slate-50 p-5">
+              <h3 class="font-bold text-slate-900">Budget</h3>
+              <p class="mt-2 text-sm text-slate-600 leading-7">Prévision de référence construite avant l'action. Il fixe les objectifs chiffrés.</p>
+            </div>
+            <div class="rounded-3xl border border-slate-200 bg-white p-5">
+              <h3 class="font-bold text-slate-900">Écart</h3>
+              <p class="mt-2 text-sm text-slate-600 leading-7">Différence entre prévu et réalisé. Il faut expliquer l'écart avant de corriger l'action.</p>
+            </div>
+          </div>
+          <div class="mt-5 rounded-3xl border border-slate-200 bg-slate-50 p-5">
+            <p class="font-bold text-slate-900">Lecture d'écart</p>
+            <p class="mt-2 text-sm text-slate-600 leading-7">Un écart peut venir du volume, du prix, du coût ou du délai. Le contrôle de gestion ne se contente pas de constater: il explique et propose une action corrective.</p>
+          </div>
+        </article>
+
+        <article class="panel p-6 lg:p-8">
+          <h2 class="section-title">5. Cas pratique</h2>
+          <div class="mt-4 grid xl:grid-cols-[1fr_1fr] gap-6">
+            <div class="rounded-3xl border border-slate-200 bg-slate-50 p-5">
+              <h3 class="font-bold text-slate-900">Situation</h3>
+              <p class="mt-2 text-sm text-slate-600 leading-7">Un restaurant suit chaque semaine le chiffre d'affaires, le nombre de couverts, la marge, le ticket moyen et le taux de satisfaction.</p>
+            </div>
+            <div class="rounded-3xl border border-slate-200 bg-white p-5">
+              <h3 class="font-bold text-slate-900">Décision</h3>
+              <p class="mt-2 text-sm text-slate-600 leading-7">Si la marge baisse, il faut savoir si le problème vient des coûts, des prix, du mix produit ou de la fréquentation.</p>
+            </div>
+          </div>
+          <div class="mt-5 rounded-3xl border border-slate-200 bg-slate-50 p-5">
+            <p class="font-bold text-slate-900">Exercice</p>
+            <p class="mt-2 text-sm text-slate-600 leading-7">Proposez 5 KPI pour une boutique en ligne et expliquez ce que chacun mesure.</p>
+            <p class="mt-3 text-sm text-slate-600 leading-7">Correction: les KPI doivent couvrir ventes, trafic, conversion, panier moyen et satisfaction, sinon le tableau de bord est incomplet.</p>
+          </div>
+          <div class="mt-5 rounded-3xl border border-slate-200 bg-white p-5">
+            <p class="font-bold text-slate-900">Cheat sheet contrôle de gestion</p>
+            <p class="mt-2 text-sm text-slate-600 leading-7">Le contrôle de gestion répond à 3 questions: que s'est-il passé, pourquoi, et que faut-il faire maintenant ? Sans réponse à ces trois questions, les chiffres n'ont pas de valeur managériale.</p>
+          </div>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <script src="assets/js/site.js"></script>
+</body>
+</html>

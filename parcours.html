@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parcours complet | Gestion d'entreprise</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body class="text-slate-900">
+  <div class="site-shell">
+    <header class="site-header p-6 lg:p-8">
+      <div class="flex flex-col gap-6">
+        <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-4">
+          <div>
+            <p class="chip">Parcours académique complet</p>
+            <h1 class="mt-4 text-4xl md:text-5xl font-black tracking-tight text-slate-ink leading-tight">
+              12 modules, 12 leçons structurées, une progression du niveau fondation au projet final.
+            </h1>
+            <p class="mt-4 max-w-4xl text-lg text-slate-600">
+              Cette page est pensée comme un manuel de cours: objectifs pédagogiques, plan, théorie, méthode, application, exercice et correction. Le but est de vous rendre capable de travailler la gestion d'entreprise de manière concrète et académique.
+            </p>
+          </div>
+          <nav class="site-nav">
+            <a class="nav-link" data-nav href="index.html">Accueil</a>
+            <a class="nav-link" data-nav href="parcours.html">Parcours</a>
+            <a class="nav-link" data-nav href="comptabilite.html">Comptabilité</a>
+            <a class="nav-link" data-nav href="marketing.html">Marketing</a>
+            <a class="nav-link" data-nav href="management.html">Management</a>
+            <a class="nav-link" data-nav href="entrepreneuriat.html">Entrepreneuriat</a>
+          </nav>
+        </div>
+
+        <div class="grid md:grid-cols-4 gap-3">
+          <div class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <div class="text-sm font-bold text-blue-700">Approche</div>
+            <p class="mt-2 text-sm text-slate-600 leading-7">Cours académique, progressif et appliqué.</p>
+          </div>
+          <div class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <div class="text-sm font-bold text-emerald-700">Public</div>
+            <p class="mt-2 text-sm text-slate-600 leading-7">Débutant sérieux ou étudiant qui veut consolider ses bases.</p>
+          </div>
+          <div class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <div class="text-sm font-bold text-amber-700">Résultat attendu</div>
+            <p class="mt-2 text-sm text-slate-600 leading-7">Comprendre, appliquer et expliquer les techniques de gestion.</p>
+          </div>
+          <div class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <div class="text-sm font-bold text-slate-700">Méthode</div>
+            <p class="mt-2 text-sm text-slate-600 leading-7">Lire, comprendre, faire l'exercice, corriger, réviser.</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="mt-8 grid xl:grid-cols-[360px_1fr] gap-6">
+      <aside class="space-y-6">
+        <section class="panel p-5">
+          <h2 class="section-title">Navigation des modules</h2>
+          <p class="mt-2 subtle">Cliquez sur un module pour ouvrir le cours détaillé.</p>
+          <div id="moduleIndex" class="mt-4 space-y-3"></div>
+        </section>
+
+        <section class="panel p-5">
+          <h2 class="section-title">Rythme conseillé</h2>
+          <div class="mt-4 space-y-3 text-sm text-slate-600 leading-7">
+            <p>• 2 à 4 séances par semaine.</p>
+            <p>• 1 à 2 heures par séance.</p>
+            <p>• Refaire un exercice 48 heures après la première correction.</p>
+            <p>• Faire le projet final à la fin pour relier tous les chapitres.</p>
+          </div>
+        </section>
+
+        <section class="panel p-5">
+          <h2 class="section-title">Sources de référence</h2>
+          <div class="mt-4 space-y-3 text-sm leading-7">
+            <a href="https://entreprendre.service-public.fr/vosdroits/F23844" target="_blank" rel="noreferrer" class="block rounded-2xl border border-slate-200 bg-slate-50 p-4 hover:border-blue-300">Forme juridique - Service Public</a>
+            <a href="https://entreprendre.service-public.fr/vosdroits/F21852" target="_blank" rel="noreferrer" class="block rounded-2xl border border-slate-200 bg-slate-50 p-4 hover:border-blue-300">Obligations comptables - Service Public</a>
+            <a href="https://entreprendre.service-public.fr/vosdroits/F23543" target="_blank" rel="noreferrer" class="block rounded-2xl border border-slate-200 bg-slate-50 p-4 hover:border-blue-300">Déclarations fiscales - Service Public</a>
+            <a href="https://bpifrance-creation.fr/encyclopedie/piloter-lentreprise/finance-pilotage-economique/tableaux-bord-gestion" target="_blank" rel="noreferrer" class="block rounded-2xl border border-slate-200 bg-slate-50 p-4 hover:border-blue-300">Tableaux de bord - Bpifrance Création</a>
+          </div>
+        </section>
+      </aside>
+
+      <section class="space-y-6">
+        <article class="panel p-6 lg:p-8">
+          <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-4">
+            <div>
+              <p id="moduleBadge" class="chip">Module 1</p>
+              <h2 id="moduleTitle" class="mt-4 text-3xl md:text-4xl font-black text-slate-ink">Les bases de l'entreprise</h2>
+            <p id="moduleSubtitle" class="mt-3 max-w-3xl text-slate-600 leading-7"></p>
+            <a id="modulePageLink" href="#" class="mt-4 inline-flex rounded-2xl border border-blue-200 bg-blue-50 px-4 py-2 text-sm font-semibold text-blue-800 hover:border-blue-300 hover:bg-blue-100 transition">
+              Ouvrir la page du module
+            </a>
+          </div>
+            <div class="rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3">
+              <p class="text-xs uppercase tracking-[0.2em] text-slate-500">Niveau</p>
+              <p id="moduleLevel" class="mt-1 font-semibold text-slate-900"></p>
+            </div>
+          </div>
+
+          <div class="mt-6 grid md:grid-cols-3 gap-4">
+            <div class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+              <h3 class="font-bold text-slate-900">Objectifs pédagogiques</h3>
+              <div id="moduleGoals" class="mt-2 text-sm text-slate-600 leading-7"></div>
+            </div>
+            <div class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+              <h3 class="font-bold text-slate-900">Pré-requis</h3>
+              <p id="modulePrereq" class="mt-2 text-sm text-slate-600 leading-7"></p>
+            </div>
+            <div class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+              <h3 class="font-bold text-slate-900">Compétence visée</h3>
+              <p id="moduleSkill" class="mt-2 text-sm text-slate-600 leading-7"></p>
+            </div>
+          </div>
+        </article>
+
+        <article class="panel p-6 lg:p-8">
+          <h3 class="section-title">Plan du cours</h3>
+          <ol id="modulePlan" class="mt-4 space-y-3"></ol>
+        </article>
+
+        <article class="panel p-6 lg:p-8">
+          <h3 class="section-title">Cours académique</h3>
+          <div id="moduleTheory" class="mt-4 space-y-6"></div>
+        </article>
+
+        <article class="panel p-6 lg:p-8">
+          <h3 class="section-title">Méthode et application</h3>
+          <div class="mt-4 grid xl:grid-cols-[1fr_1fr] gap-6">
+            <div class="rounded-3xl border border-slate-200 bg-slate-50 p-5">
+              <h4 class="font-bold text-slate-900">Technique à maîtriser</h4>
+              <p id="moduleTechnique" class="mt-2 text-sm text-slate-600 leading-7"></p>
+            </div>
+            <div class="rounded-3xl border border-slate-200 bg-white p-5">
+              <h4 class="font-bold text-slate-900">Cas d'application</h4>
+              <p id="moduleCase" class="mt-2 text-sm text-slate-600 leading-7"></p>
+            </div>
+          </div>
+        </article>
+
+        <article class="panel p-6 lg:p-8">
+          <h3 class="section-title">Exercice corrigé</h3>
+          <p id="moduleExercise" class="mt-3 text-slate-600 leading-7"></p>
+          <div class="mt-4 rounded-3xl border border-slate-200 bg-slate-50 p-5">
+            <p class="font-bold text-slate-900">Correction</p>
+            <p id="moduleCorrection" class="mt-2 text-sm text-slate-600 leading-7"></p>
+          </div>
+        </article>
+
+        <article class="panel p-6 lg:p-8">
+          <h3 class="section-title">Vocabulaire essentiel</h3>
+          <div id="moduleTerms" class="mt-4 flex flex-wrap gap-2"></div>
+          <div class="mt-5 rounded-3xl border border-slate-200 bg-slate-50 p-5">
+            <p class="font-bold text-slate-900">Résumé de fin de leçon</p>
+            <p id="moduleSummary" class="mt-2 text-sm text-slate-600 leading-7"></p>
+          </div>
+        </article>
+
+        <article class="panel p-6 lg:p-8">
+          <h3 class="section-title">Projet final</h3>
+          <p class="mt-3 text-slate-600 leading-7">À la fin du parcours, vous devrez gérer une entreprise fictive de A à Z.</p>
+          <div id="projectSteps" class="mt-5 grid md:grid-cols-2 xl:grid-cols-4 gap-4"></div>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <script src="assets/js/site.js"></script>
+  <script>
+    const lessons = [
+      {
+        badge: "Module 1",
+        title: "Les bases de l'entreprise",
+        subtitle: "Définir l'entreprise, distinguer ses formes et comprendre son rôle économique, social et organisationnel.",
+        level: "Fondations",
+        objectives: [
+          "Définir précisément ce qu'est une entreprise.",
+          "Distinguer les principaux types d'entreprises.",
+          "Identifier les fonctions, parties prenantes et objectifs."
+        ],
+        prereq: "Aucun pré-requis technique. Il faut seulement savoir lire un texte de gestion et raisonner de façon structurée.",
+        skill: "Analyser une entreprise comme un système organisé qui crée de la valeur.",
+        plan: [
+          "Définition de l'entreprise",
+          "Types d'entreprises et formes juridiques",
+          "Fonctions internes",
+          "Parties prenantes",
+          "Objectifs et mission"
+        ],
+        theory: [
+          {
+            title: "1. Définir l'entreprise",
+            body: "Une entreprise est une organisation qui combine des ressources humaines, matérielles, financières et immatérielles pour produire des biens ou des services destinés à un marché. Elle n'est pas seulement un lieu de vente: elle collecte des moyens, les transforme et crée de la valeur."
+          },
+          {
+            title: "2. Les types d'entreprises",
+            body: "On peut classer les entreprises par taille, activité, secteur et forme juridique. Cette classification n'est pas purement descriptive: elle détermine le mode de décision, la responsabilité des dirigeants, les obligations administratives et la structure du risque."
+          },
+          {
+            title: "3. Les fonctions de l'entreprise",
+            body: "La fonction commerciale porte la relation client; la fonction production transforme les intrants; la fonction financière suit les ressources; la fonction RH gère les compétences; la direction coordonne les choix et fixe les priorités."
+          },
+          {
+            title: "4. Parties prenantes et objectifs",
+            body: "Les clients, salariés, fournisseurs, banques, actionnaires, État et communauté locale n'ont pas tous les mêmes attentes. Le dirigeant doit arbitrer entre ces intérêts. Les objectifs doivent être concrets, mesurables et reliés à la mission de l'organisation."
+          }
+        ],
+        technique: "Utilisez la grille suivante pour diagnostiquer une entreprise: ressources -> transformation -> produits/services -> marché -> parties prenantes -> objectifs.",
+        caseStudy: "Cas: une boulangerie de quartier. Elle achète des matières premières, emploie des salariés, vend du pain, paie ses fournisseurs, répond aux attentes des clients et doit assurer sa rentabilité.",
+        exercise: "Choisissez une entreprise réelle et rédigez une fiche de diagnostic en 6 lignes: activité, clients, ressources, fonctions, parties prenantes et objectifs.",
+        correction: "La bonne réponse montre que l'entreprise est un système organisé. Elle doit faire apparaître ce qu'elle utilise, ce qu'elle produit, à qui elle vend et pourquoi elle existe.",
+        terms: ["entreprise", "ressource", "marché", "parties prenantes", "mission", "objectif", "valeur", "organisation"],
+        summary: "Ce module donne le cadre général. Sans cette base, les autres chapitres n'ont pas de sens."
+      },
+      {
+        badge: "Module 2",
+        title: "Comptabilité",
+        subtitle: "Enregistrer les opérations, tenir le journal, comprendre le bilan, le compte de résultat et les amortissements.",
+        level: "Comptabilité",
+        objectives: [
+          "Comprendre la logique de la partie double.",
+          "Passer des écritures simples et justes.",
+          "Lire les états financiers et les mécanismes de clôture."
+        ],
+        prereq: "Savoir distinguer une ressource, une dette, une charge et un produit.",
+        skill: "Transformer un justificatif en écriture comptable et interpréter les comptes annuels.",
+        plan: [
+          "Principes comptables",
+          "Le journal et le grand livre",
+          "Le bilan",
+          "Le compte de résultat",
+          "Amortissements, stocks et clôture"
+        ],
+        theory: [
+          {
+            title: "1. La logique comptable",
+            body: "La comptabilité d'engagement rattache les charges et produits à l'exercice auquel ils appartiennent. La partie double exige que tout mouvement soit enregistré deux fois, au débit et au crédit, pour le même montant."
+          },
+          {
+            title: "2. Le journal et le grand livre",
+            body: "Le journal enregistre les opérations dans l'ordre chronologique. Le grand livre regroupe les mouvements par compte et permet de suivre les soldes. Cette étape est indispensable pour contrôler la cohérence des enregistrements."
+          },
+          {
+            title: "3. Le bilan et le compte de résultat",
+            body: "Le bilan est une photographie patrimoniale à une date donnée. Le compte de résultat est un film de l'activité sur une période. Le premier montre actif, passif et capitaux propres; le second compare produits et charges pour déterminer le résultat."
+          },
+          {
+            title: "4. Amortissements, stocks et clôture",
+            body: "L'amortissement répartit le coût d'un bien durable sur sa durée d'utilisation. Les stocks doivent être suivis pour éviter ruptures et immobilisations excessives de trésorerie. En fin de période, on ajuste, on vérifie et on clôture."
+          }
+        ],
+        technique: "Pour chaque opération, identifiez: le document source, le type de compte touché, le sens économique, puis l'écriture équilibrée. Débit pour ce qui augmente un actif ou une charge, crédit pour ce qui augmente un passif ou un produit.",
+        caseStudy: "Cas: apport de capital de 10 000 €, achat d'un ordinateur 2 500 € à crédit, vente de services 1 200 € au comptant, paiement d'un fournisseur 700 €. Ces quatre opérations suffisent à construire un mini-cycle comptable.",
+        exercise: "Passez en écriture le cas ci-dessus et expliquez l'effet de chaque opération sur le bilan et le résultat.",
+        correction: "Apport: Banque au débit, Capital au crédit. Achat: Immobilisation au débit, Fournisseur au crédit. Vente: Banque au débit, Produit au crédit. Paiement fournisseur: Fournisseur au débit, Banque au crédit.",
+        terms: ["débit", "crédit", "journal", "grand livre", "bilan", "compte de résultat", "amortissement", "stock"],
+        summary: "La comptabilité ne consiste pas à mémoriser des définitions, mais à appliquer une méthode rigoureuse et répétitive."
+      },
+      {
+        badge: "Module 3",
+        title: "Finance d'entreprise",
+        subtitle: "Piloter la trésorerie, construire un budget, calculer la rentabilité, le seuil de rentabilité et évaluer un investissement.",
+        level: "Finance",
+        objectives: [
+          "Gérer la trésorerie de manière prévisionnelle.",
+          "Construire un budget réaliste.",
+          "Analyser la rentabilité et un projet d'investissement."
+        ],
+        prereq: "Maîtriser les bases comptables et la différence entre résultat et trésorerie.",
+        skill: "Décider avec des chiffres et non avec une impression.",
+        plan: [
+          "Trésorerie et budget",
+          "Rentabilité",
+          "Seuil de rentabilité",
+          "Investissements",
+          "Analyse financière"
+        ],
+        theory: [
+          { title: "1. Trésorerie", body: "La trésorerie correspond aux liquidités disponibles pour payer les charges courantes. Une entreprise peut être rentable sur le papier et pourtant manquer de cash si les encaissements sont trop tardifs." },
+          { title: "2. Budget et prévision", body: "Le budget traduit les objectifs en montants chiffrés. Il doit estimer les ventes, les charges fixes, les coûts variables et les besoins de financement." },
+          { title: "3. Rentabilité et seuil de rentabilité", body: "La rentabilité mesure la capacité à créer un excédent. Le seuil de rentabilité est le niveau de chiffre d'affaires à partir duquel l'entreprise couvre tous ses coûts." },
+          { title: "4. Investissement et analyse", body: "Un investissement mobilise des ressources aujourd'hui pour générer des avantages futurs. Il faut apprécier le coût, le risque, la durée, la capacité de remboursement et la valeur créée." }
+        ],
+        technique: "Formules utiles: marge sur coût variable = chiffre d'affaires - coûts variables. Seuil de rentabilité = charges fixes / taux de marge sur coût variable.",
+        caseStudy: "Cas: une petite salle de sport. Elle doit prévoir ses abonnements, ses loyers, ses salaires, ses délais d'encaissement et le financement des machines.",
+        exercise: "Expliquez pourquoi une entreprise peut avoir un bénéfice comptable et une trésorerie négative.",
+        correction: "Parce que le résultat ne tient pas compte du calendrier des paiements. Une vente à crédit crée un produit, mais pas immédiatement du cash.",
+        terms: ["trésorerie", "budget", "marge", "rentabilité", "seuil de rentabilité", "investissement", "cash-flow"],
+        summary: "Le pilotage financier sert à éviter les crises de liquidité et à choisir les projets qui créent réellement de la valeur."
+      },
+      {
+        badge: "Module 4",
+        title: "Marketing",
+        subtitle: "Étude de marché, 4P, positionnement, fidélisation et marketing digital.",
+        level: "Marketing",
+        objectives: [
+          "Comprendre la demande et la concurrence.",
+          "Construire un mix marketing cohérent.",
+          "Créer une relation durable avec le client."
+        ],
+        prereq: "Savoir distinguer marché, cible et offre.",
+        skill: "Construire une offre adaptée au besoin réel du client.",
+        plan: [
+          "Étude de marché",
+          "Segmentation et ciblage",
+          "Positionnement",
+          "Les 4P",
+          "Fidélisation et digital"
+        ],
+        theory: [
+          { title: "1. Étude de marché", body: "Elle vérifie si la demande existe, quelles sont les attentes des clients, quelle est l'intensité concurrentielle et quel niveau de prix est acceptable." },
+          { title: "2. Segmentation et ciblage", body: "La segmentation découpe le marché en groupes homogènes. Le ciblage consiste à choisir les segments les plus attractifs au regard des ressources disponibles et du potentiel de rentabilité." },
+          { title: "3. Positionnement", body: "Le positionnement est la place que l'entreprise veut occuper dans l'esprit du client. Il doit être clair, différenciant et crédible." },
+          { title: "4. Les 4P et la fidélisation", body: "Produit, Prix, Place, Promotion doivent être cohérents. La fidélisation repose sur la qualité, la confiance, le service et la régularité de la relation client." }
+        ],
+        technique: "Travaillez toujours en trois temps: comprendre le client, formuler l'offre, puis choisir les canaux de diffusion et de communication.",
+        caseStudy: "Cas: lancement d'une marque de café en ligne visant les étudiants. L'entreprise doit définir une offre simple, un prix accessible, un canal e-commerce et une communication sur les réseaux.",
+        exercise: "Construisez les 4P d'un produit de votre choix en 8 lignes maximum.",
+        correction: "La réponse doit couvrir les caractéristiques du produit, le niveau de prix, le lieu de distribution et les moyens de promotion.",
+        terms: ["étude de marché", "cible", "positionnement", "produit", "prix", "promotion", "fidélisation", "digital"],
+        summary: "Le marketing transforme une connaissance du marché en offre concrète et vendable."
+      },
+      {
+        badge: "Module 5",
+        title: "Gestion des ressources humaines",
+        subtitle: "Recruter, former, motiver, diriger et évaluer les performances en respectant les bases du droit du travail.",
+        level: "RH",
+        objectives: [
+          "Définir le besoin en personnel.",
+          "Recruter et intégrer les collaborateurs.",
+          "Développer les compétences et l'engagement."
+        ],
+        prereq: "Comprendre la notion d'organisation et de responsabilité dans l'entreprise.",
+        skill: "Piloter les personnes avec méthode, équité et efficacité.",
+        plan: [
+          "Recrutement",
+          "Formation",
+          "Motivation et leadership",
+          "Évaluation des performances",
+          "Bases du droit du travail"
+        ],
+        theory: [
+          { title: "1. Recruter", body: "Le recrutement commence par l'analyse du besoin, la rédaction d'un profil, la sélection des candidats et l'entretien. Un mauvais recrutement coûte du temps, de l'argent et de la cohésion." },
+          { title: "2. Former", body: "La formation permet d'accompagner l'évolution des métiers, de réduire les erreurs et d'améliorer la productivité. Elle est un investissement dans le capital humain." },
+          { title: "3. Motiver et diriger", body: "La motivation dépend du salaire, mais aussi de la reconnaissance, de l'autonomie, du sens donné au travail et de la qualité du management." },
+          { title: "4. Évaluer et encadrer", body: "L'évaluation des performances repose sur des critères clairs, des objectifs définis et des retours réguliers. Les bases du droit du travail garantissent un cadre légal à l'action managériale." }
+        ],
+        technique: "Utilisez une fiche de poste, un entretien structuré et des objectifs SMART pour professionnaliser le recrutement et le suivi.",
+        caseStudy: "Cas: un restaurant cherche un serveur. Il faut définir le besoin, préciser les compétences attendues, organiser la formation d'accueil et prévoir les critères d'évaluation.",
+        exercise: "Écrivez une fiche de poste très simple pour un poste de votre choix: missions, compétences, critères de sélection.",
+        correction: "La fiche de poste doit séparer les missions, les compétences nécessaires et les indicateurs de succès du poste.",
+        terms: ["recrutement", "formation", "motivation", "leadership", "performance", "droit du travail", "compétence", "poste"],
+        summary: "Une entreprise performante a besoin de bonnes personnes et d'un cadre de travail clair."
+      },
+      {
+        badge: "Module 6",
+        title: "Management",
+        subtitle: "Planifier, organiser, diriger, contrôler, décider et gérer les conflits.",
+        level: "Management",
+        objectives: [
+          "Appliquer les fonctions du management.",
+          "Structurer la prise de décision.",
+          "Résoudre les conflits de manière constructive."
+        ],
+        prereq: "Avoir compris les fonctions de l'entreprise et la logique des objectifs.",
+        skill: "Transformer les objectifs en actions coordonnées.",
+        plan: [
+          "Planifier",
+          "Organiser",
+          "Diriger",
+          "Contrôler",
+          "Décider et gérer les conflits"
+        ],
+        theory: [
+          { title: "1. Planifier", body: "Planifier, c'est définir les objectifs, les jalons, les délais et les ressources. Sans planification, l'action devient réactive et coûteuse." },
+          { title: "2. Organiser", body: "Organiser signifie répartir les tâches, créer les circuits de décision et attribuer les responsabilités. La bonne organisation réduit les doublons et les pertes de temps." },
+          { title: "3. Diriger", body: "Diriger, c'est animer les équipes, donner une direction, clarifier les attentes et soutenir l'exécution. Le leadership efficace repose sur la communication et la crédibilité." },
+          { title: "4. Contrôler et décider", body: "Le contrôle compare les résultats aux objectifs. La décision consiste ensuite à corriger les écarts, arbitrer entre plusieurs options et gérer les conflits de manière rationnelle." }
+        ],
+        technique: "Suivez une boucle simple: objectif -> plan -> action -> contrôle -> correction.",
+        caseStudy: "Cas: lancement d'un nouveau point de vente. Il faut définir les tâches, les responsables, les délais et les indicateurs de réussite.",
+        exercise: "Décrivez comment vous géreriez une équipe qui ne respecte pas ses délais.",
+        correction: "Un bon manager commence par comprendre la cause du retard, ajuste l'organisation, clarifie les responsabilités et contrôle à nouveau les résultats.",
+        terms: ["planification", "organisation", "direction", "contrôle", "décision", "conflit", "coordination", "management"],
+        summary: "Le management donne une méthode pour faire travailler des personnes ensemble autour d'un but commun."
+      },
+      {
+        badge: "Module 7",
+        title: "Gestion de la production",
+        subtitle: "Organisation du travail, stocks, qualité, logistique et chaîne d'approvisionnement.",
+        level: "Opérations",
+        objectives: [
+          "Organiser le travail efficacement.",
+          "Suivre les stocks et les flux.",
+          "Assurer qualité, logistique et continuité."
+        ],
+        prereq: "Comprendre l'enchaînement entre approvisionnement, production et livraison.",
+        skill: "Maîtriser les opérations pour produire au bon coût, au bon moment et au bon niveau de qualité.",
+        plan: [
+          "Organisation du travail",
+          "Gestion des stocks",
+          "Qualité",
+          "Logistique",
+          "Chaîne d'approvisionnement"
+        ],
+        theory: [
+          { title: "1. Organisation du travail", body: "Il faut répartir les tâches, prévoir les horaires, limiter les goulots d'étranglement et définir les responsabilités. L'organisation du travail est un levier de performance et de sécurité." },
+          { title: "2. Gestion des stocks", body: "Le stock sert à éviter les ruptures, mais il immobilise de l'argent. Il faut donc trouver un équilibre entre disponibilité et coût de possession." },
+          { title: "3. Qualité", body: "La qualité désigne la conformité aux attentes du client et aux standards définis. Elle se mesure par les défauts, les retours, la satisfaction et la répétition des ventes." },
+          { title: "4. Logistique et chaîne d'approvisionnement", body: "La logistique couvre les flux physiques et d'information. La supply chain va plus loin en intégrant les fournisseurs, le transport, l'entrepôt et la distribution." }
+        ],
+        technique: "Analysez chaque flux: entrée, transformation, sortie. Puis vérifiez les points de rupture potentiels dans les stocks, les transports et la qualité.",
+        caseStudy: "Cas: une petite usine de biscuits. Une rupture de farine bloque la production, une mauvaise planification des livraisons crée des retards, et une baisse de qualité fait chuter les ventes.",
+        exercise: "Expliquez en 5 lignes pourquoi un stock trop élevé et un stock trop faible sont tous les deux problématiques.",
+        correction: "Trop faible: rupture, retard, insatisfaction. Trop élevé: argent immobilisé, risque de casse ou péremption, stockage coûteux.",
+        terms: ["stock", "qualité", "logistique", "flux", "supply chain", "production", "approvisionnement", "organisation"],
+        summary: "La production efficace est une coordination fine entre matières, personnes, délais et qualité."
+      },
+      {
+        badge: "Module 8",
+        title: "Entrepreneuriat",
+        subtitle: "Trouver une idée, construire un business model, un business plan et lancer l'activité.",
+        level: "Création",
+        objectives: [
+          "Transformer une idée en projet.",
+          "Structurer un business model crédible.",
+          "Préparer le financement et le lancement."
+        ],
+        prereq: "Avoir compris le marché, la logique financière et les principes de base de gestion.",
+        skill: "Passer de l'intention à l'exécution avec un dossier solide.",
+        plan: [
+          "Trouver une idée",
+          "Business Model Canvas",
+          "Business plan",
+          "Financement",
+          "Lancement"
+        ],
+        theory: [
+          { title: "1. De l'idée au projet", body: "Une bonne idée répond à un besoin réel et accessible. Elle doit être testée par le marché avant de mobiliser trop de ressources." },
+          { title: "2. Business Model Canvas", body: "Le business model canvas décrit la proposition de valeur, la clientèle, les canaux, les revenus, les coûts, les activités clés et les ressources clés." },
+          { title: "3. Business plan", body: "Le business plan est le document de structuration. Il précise le marché, la stratégie, l'organisation, le financement et les prévisions." },
+          { title: "4. Financement et lancement", body: "Il faut chiffrer les besoins, choisir les sources de financement, préparer le démarrage et suivre les premiers mois avec attention." }
+        ],
+        technique: "Validez toujours 3 points: le besoin, la capacité à délivrer, et la viabilité financière.",
+        caseStudy: "Cas: lancer une application de livraison de repas sains. Il faut définir la cible, la proposition de valeur, les coûts de développement, la logistique et les financements.",
+        exercise: "Présentez un mini business model pour une idée d'entreprise en 10 lignes.",
+        correction: "La correction doit montrer qui est le client, quel besoin est servi, comment l'entreprise gagne de l'argent et quelles ressources sont nécessaires.",
+        terms: ["idée", "business model", "business plan", "financement", "lancement", "clientèle", "viabilité", "ressource"],
+        summary: "L'entrepreneuriat est une méthode de transformation d'une idée en activité réelle et soutenable."
+      },
+      {
+        badge: "Module 9",
+        title: "Fiscalité",
+        subtitle: "Les principaux impôts, la TVA, les déclarations et les obligations fiscales.",
+        level: "Fiscalité",
+        objectives: [
+          "Comprendre la logique des impôts professionnels.",
+          "Maîtriser les bases de la TVA.",
+          "Savoir quelles obligations déclaratives existent."
+        ],
+        prereq: "Comprendre la différence entre chiffre d'affaires, résultat et trésorerie.",
+        skill: "Lire la fiscalité comme un ensemble de règles à anticiper et à organiser.",
+        plan: [
+          "Principaux impôts",
+          "TVA",
+          "Déclarations",
+          "Obligations fiscales"
+        ],
+        theory: [
+          { title: "1. Les impôts de l'entreprise", body: "Selon sa forme et son régime, l'entreprise peut être concernée par l'impôt sur les sociétés, l'impôt sur le revenu, la CFE, la TVA et d'autres obligations." },
+          { title: "2. La TVA", body: "La TVA est un impôt sur la consommation collecté par l'entreprise pour le compte de l'État. Elle nécessite un suivi des taxes collectées et déductibles." },
+          { title: "3. Les déclarations", body: "Les déclarations sont souvent dématérialisées. Leur calendrier doit être intégré à l'organisation administrative pour éviter pénalités et oublis." },
+          { title: "4. Les obligations fiscales", body: "L'entreprise doit déclarer, payer, archiver et pouvoir justifier ses opérations. La conformité fiscale fait partie du pilotage de base." }
+        ],
+        technique: "Tenez un calendrier fiscal interne: échéance, impôt concerné, support de déclaration, responsable, preuve d'envoi.",
+        caseStudy: "Cas: une société vend des biens avec TVA. Elle doit collecter la taxe sur ses ventes, suivre la TVA déductible sur ses achats et déclarer le solde dans les délais.",
+        exercise: "Expliquez en 6 lignes la différence entre TVA collectée et TVA déductible.",
+        correction: "La TVA collectée est celle facturée aux clients. La TVA déductible est celle payée aux fournisseurs et récupérable sous conditions. Le solde est reversé ou remboursé selon le cas.",
+        terms: ["TVA", "déclaration", "impôt", "obligation", "télédéclaration", "télépaiement", "fiscal", "conformité"],
+        summary: "La fiscalité doit être anticipée comme une fonction normale de gestion, pas comme une surprise."
+      },
+      {
+        badge: "Module 10",
+        title: "Analyse stratégique",
+        subtitle: "SWOT, PESTEL, cinq forces de Porter et avantage concurrentiel.",
+        level: "Stratégie",
+        objectives: [
+          "Analyser l'environnement interne et externe.",
+          "Comprendre l'intensité concurrentielle.",
+          "Construire un avantage concurrentiel."
+        ],
+        prereq: "Savoir identifier marché, concurrence et ressources internes.",
+        skill: "Prendre de la hauteur pour décider où et comment se positionner.",
+        plan: [
+          "Analyse SWOT",
+          "Analyse PESTEL",
+          "Cinq forces de Porter",
+          "Avantage concurrentiel"
+        ],
+        theory: [
+          { title: "1. SWOT", body: "La SWOT croise les forces et faiblesses internes avec les opportunités et menaces externes. Elle sert à synthétiser un diagnostic stratégique." },
+          { title: "2. PESTEL", body: "Le PESTEL analyse les dimensions politiques, économiques, sociales, technologiques, environnementales et légales du contexte." },
+          { title: "3. Les cinq forces de Porter", body: "Elles évaluent la rivalité concurrentielle, la menace des nouveaux entrants, des produits de substitution, et le pouvoir de négociation des clients et fournisseurs." },
+          { title: "4. Avantage concurrentiel", body: "L'entreprise doit choisir ce qu'elle fait mieux que les autres: coût, différenciation, qualité, spécialisation ou rapidité." }
+        ],
+        technique: "Rédigez toujours un diagnostic en séparant clairement ce qui est interne de ce qui est externe.",
+        caseStudy: "Cas: une entreprise de cosmétiques bio. Elle bénéficie d'une tendance favorable au naturel, mais subit une concurrence forte, des contraintes réglementaires et des clients très informés.",
+        exercise: "Faites une mini SWOT d'une marque que vous connaissez bien.",
+        correction: "Les forces et faiblesses doivent venir de l'entreprise elle-même; les opportunités et menaces du marché et de l'environnement.",
+        terms: ["SWOT", "PESTEL", "Porter", "concurrence", "avantage concurrentiel", "diagnostic", "stratégie", "positionnement"],
+        summary: "La stratégie sert à comprendre le terrain de jeu avant de choisir les bons combats."
+      },
+      {
+        badge: "Module 11",
+        title: "Contrôle de gestion",
+        subtitle: "Tableaux de bord, KPI, calcul des coûts et budgets.",
+        level: "Pilotage",
+        objectives: [
+          "Construire un tableau de bord utile.",
+          "Choisir les bons indicateurs de performance.",
+          "Calculer les coûts et contrôler les écarts."
+        ],
+        prereq: "Savoir lire les ventes, les charges et les budgets.",
+        skill: "Piloter l'activité par la mesure et l'analyse des écarts.",
+        plan: [
+          "Tableaux de bord",
+          "KPI",
+          "Calcul des coûts",
+          "Budgets",
+          "Analyse des écarts"
+        ],
+        theory: [
+          { title: "1. Tableaux de bord", body: "Un tableau de bord rassemble quelques indicateurs pertinents pour suivre l'activité. Il doit être lisible, rapide à mettre à jour et centré sur l'action." },
+          { title: "2. KPI", body: "Les KPI mesurent un point précis: taux de marge, chiffre d'affaires, taux de conversion, délai moyen, satisfaction client, productivité." },
+          { title: "3. Calcul des coûts", body: "Le calcul des coûts permet d'attribuer les charges à un produit, un service ou un centre de responsabilité. Il aide à fixer les prix et à suivre la performance." },
+          { title: "4. Budgets et écarts", body: "Le budget sert de référence. Le contrôle de gestion compare le réalisé au prévu, explique les écarts et propose des actions correctives." }
+        ],
+        technique: "Un bon indicateur doit être simple, utile, mesurable, comparable dans le temps et lié à une décision.",
+        caseStudy: "Cas: une boutique suit ses ventes quotidiennes, sa marge par produit, son taux de rupture de stock et son taux de satisfaction client pour corriger rapidement ses décisions.",
+        exercise: "Proposez 5 KPI pertinents pour un restaurant et expliquez ce qu'ils permettent de contrôler.",
+        correction: "Les KPI doivent couvrir ventes, qualité, délai, coût et satisfaction. Il faut éviter les indicateurs trop nombreux ou inutilisables.",
+        terms: ["tableau de bord", "KPI", "coût", "budget", "écart", "pilotage", "performance", "contrôle"],
+        summary: "Le contrôle de gestion transforme les chiffres en décisions opérationnelles."
+      },
+      {
+        badge: "Module 12",
+        title: "Projet final",
+        subtitle: "Gérer une entreprise fictive de A à Z en mobilisant tous les modules du parcours.",
+        level: "Synthèse",
+        objectives: [
+          "Créer une entreprise fictive.",
+          "Réaliser une étude de marché.",
+          "Établir un budget, recruter, vendre et analyser les résultats."
+        ],
+        prereq: "Avoir travaillé l'ensemble des modules précédents.",
+        skill: "Relier les fonctions de gestion dans un cas concret complet.",
+        plan: [
+          "Créer l'entreprise",
+          "Étude de marché",
+          "Budget",
+          "Recrutement",
+          "Prix et ventes",
+          "États financiers",
+          "Analyse des résultats"
+        ],
+        theory: [
+          { title: "1. Préparer le projet", body: "Le projet final oblige à choisir une idée, un statut, une cible et une proposition de valeur. Cette phase demande de la cohérence entre le marché, l'organisation et les moyens." },
+          { title: "2. Construire l'exploitation", body: "Il faut chiffrer les ventes, les charges, les besoins en personnel, les stocks, les investissements et la trésorerie. Le projet doit être viable, pas seulement séduisant." },
+          { title: "3. Piloter dans le temps", body: "Une fois l'activité lancée, l'étudiant doit suivre les résultats, produire les états financiers, lire les écarts et proposer des décisions correctives." },
+          { title: "4. Soutenance et analyse", body: "Le travail final doit être présenté comme un mini-dossier professionnel: hypothèses, chiffres, décisions, limites et plan d'amélioration." }
+        ],
+        technique: "Travaillez comme un dirigeant: hypothèses, chiffres, risques, décisions, puis contrôle des résultats.",
+        caseStudy: "Cas fil rouge: une entreprise fictive de services. Vous devez choisir le modèle économique, lancer l'activité, suivre les ventes, tenir les comptes et ajuster la stratégie.",
+        exercise: "Rédigez le sommaire de votre projet final en 7 parties, de la création à l'analyse des résultats.",
+        correction: "Le sommaire doit suivre la logique du parcours: idée, marché, budget, organisation, ventes, états financiers, analyse et décisions.",
+        terms: ["projet", "synthèse", "viabilité", "pilotage", "dossier", "analyse", "décision", "entreprise fictive"],
+        summary: "Le projet final prouve que vous savez relier les outils et raisonner comme un gestionnaire."
+      }
+    ];
+
+    const projectSteps = [
+      { title: "Créer l'entreprise", text: "Nom, mission, statut, cible, proposition de valeur." },
+      { title: "Réaliser l'étude de marché", text: "Demande, concurrence, prix, besoins clients." },
+      { title: "Établir un budget", text: "Recettes, charges, trésorerie, financement." },
+      { title: "Recruter", text: "Postes, profils, intégration, formation." },
+      { title: "Fixer les prix", text: "Coûts, marge, positionnement, marché." },
+      { title: "Gérer les ventes", text: "Canaux, conversion, fidélisation, suivi." },
+      { title: "Produire les états financiers", text: "Bilan, compte de résultat, lecture des comptes." },
+      { title: "Analyser et décider", text: "Écarts, causes, corrections, plan d'action." }
+    ];
+
+    const moduleIndex = document.getElementById("moduleIndex");
+    const projectWrap = document.getElementById("projectSteps");
+    const modulePages = [
+      "bases-entreprise.html",
+      "comptabilite.html",
+      "finance.html",
+      "marketing.html",
+      "rh.html",
+      "management.html",
+      "production.html",
+      "entrepreneuriat.html",
+      "fiscalite.html",
+      "analyse-strategique.html",
+      "controle-gestion.html",
+      "projet-final.html"
+    ];
+
+    const state = {
+      active: 0
+    };
+
+    function paragraphize(text) {
+      return `<p class="text-sm text-slate-600 leading-7">${text}</p>`;
+    }
+
+    function renderList() {
+      moduleIndex.innerHTML = lessons.map((lesson, idx) => `
+        <button type="button" class="lesson-card ${idx === state.active ? "active" : ""}" data-index="${idx}">
+          <div class="flex items-start justify-between gap-3">
+            <div>
+              <div class="text-xs font-bold uppercase tracking-[0.18em] text-blue-700">${lesson.badge}</div>
+              <div class="mt-2 font-bold text-slate-900">${lesson.title}</div>
+            </div>
+            <span class="rounded-full bg-slate-100 px-2.5 py-1 text-xs font-semibold text-slate-600">${idx + 1}</span>
+          </div>
+          <p class="mt-3 text-sm text-slate-600 leading-6">${lesson.subtitle}</p>
+        </button>
+      `).join("");
+
+      moduleIndex.querySelectorAll("button").forEach((btn) => {
+        btn.addEventListener("click", () => setActive(Number(btn.dataset.index)));
+      });
+    }
+
+    function renderProject() {
+      projectWrap.innerHTML = projectSteps.map((step) => `
+        <div class="rounded-2xl border border-slate-200 bg-white p-4">
+          <p class="font-bold text-slate-900">${step.title}</p>
+          <p class="mt-2 text-sm text-slate-600 leading-7">${step.text}</p>
+        </div>
+      `).join("");
+    }
+
+    function renderLesson(index) {
+      const lesson = lessons[index];
+      document.getElementById("moduleBadge").textContent = lesson.badge;
+      document.getElementById("moduleTitle").textContent = lesson.title;
+      document.getElementById("moduleSubtitle").textContent = lesson.subtitle;
+      document.getElementById("modulePageLink").href = modulePages[index];
+      document.getElementById("moduleLevel").textContent = lesson.level;
+      document.getElementById("moduleGoals").innerHTML = `<ul class="list-disc pl-5 space-y-2">${lesson.objectives.map((o) => `<li>${o}</li>`).join("")}</ul>`;
+      document.getElementById("modulePrereq").textContent = lesson.prereq;
+      document.getElementById("moduleSkill").textContent = lesson.skill;
+      document.getElementById("modulePlan").innerHTML = lesson.plan.map((item, idx) => `
+        <li class="flex gap-3 rounded-2xl border border-slate-200 bg-slate-50 p-4">
+          <span class="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-blue-100 text-blue-800 text-sm font-bold">${idx + 1}</span>
+          <div>
+            <p class="font-semibold text-slate-900">${item}</p>
+            <p class="mt-1 text-sm text-slate-500">Sous-partie du module.</p>
+          </div>
+        </li>
+      `).join("");
+      document.getElementById("moduleTheory").innerHTML = lesson.theory.map((part) => `
+        <section class="rounded-3xl border border-slate-200 bg-slate-50 p-5">
+          <h4 class="font-bold text-slate-900">${part.title}</h4>
+          <p class="mt-3 text-sm text-slate-600 leading-7">${part.body}</p>
+        </section>
+      `).join("");
+      document.getElementById("moduleTechnique").textContent = lesson.technique;
+      document.getElementById("moduleCase").textContent = lesson.caseStudy;
+      document.getElementById("moduleExercise").textContent = lesson.exercise;
+      document.getElementById("moduleCorrection").textContent = lesson.correction;
+      document.getElementById("moduleTerms").innerHTML = lesson.terms.map((term) => `<span class="chip">${term}</span>`).join("");
+      document.getElementById("moduleSummary").textContent = lesson.summary;
+      moduleIndex.querySelectorAll(".lesson-card").forEach((card, i) => card.classList.toggle("active", i === index));
+      document.getElementById("moduleTitle").scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+
+    function setActive(index) {
+      state.active = index;
+      renderLesson(index);
+    }
+
+    renderList();
+    renderProject();
+    setActive(0);
+  </script>
+</body>
+</html>

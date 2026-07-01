@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Comptabilité pratique | Gestion d'entreprise</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body class="text-slate-900">
+  <div class="site-shell">
+    <header class="site-header p-6 lg:p-8">
+      <div class="flex flex-col gap-6">
+        <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-4">
+          <div>
+            <p class="chip">Module 1. Comptabilité pratique</p>
+            <h1 class="mt-4 text-4xl md:text-5xl font-black tracking-tight text-slate-ink leading-tight">
+              Savoir enregistrer les opérations, lire les comptes et préparer les états financiers.
+            </h1>
+            <p class="mt-4 max-w-3xl text-lg text-slate-600">
+              Cette page vise le niveau étudiant: on apprend la logique comptable, les mécanismes débit/crédit, le journal, le grand livre, la balance, le bilan, le compte de résultat et un cas appliqué complet.
+            </p>
+          </div>
+          <nav class="site-nav">
+            <a class="nav-link" data-nav href="index.html">Accueil</a>
+            <a class="nav-link" data-nav href="parcours.html">Parcours complet</a>
+            <a class="nav-link" data-nav href="comptabilite.html">Comptabilité</a>
+            <a class="nav-link" data-nav href="marketing.html">Marketing</a>
+            <a class="nav-link" data-nav href="management.html">Management</a>
+            <a class="nav-link" data-nav href="entrepreneuriat.html">Entrepreneuriat</a>
+          </nav>
+        </div>
+
+        <div class="grid md:grid-cols-4 gap-3">
+          <div class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <div class="text-sm font-bold text-blue-700">Objectif</div>
+            <p class="mt-2 text-sm text-slate-600 leading-7">Écrire une opération comptable correctement.</p>
+          </div>
+          <div class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <div class="text-sm font-bold text-emerald-700">Technique</div>
+            <p class="mt-2 text-sm text-slate-600 leading-7">Identifier les comptes, la nature et le sens débit/crédit.</p>
+          </div>
+          <div class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <div class="text-sm font-bold text-amber-700">Résultat</div>
+            <p class="mt-2 text-sm text-slate-600 leading-7">Lire les comptes annuels et comprendre la situation de l'entreprise.</p>
+          </div>
+          <div class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <div class="text-sm font-bold text-slate-700">Méthode</div>
+            <p class="mt-2 text-sm text-slate-600 leading-7">Du justificatif à l'écriture, puis au bilan et au compte de résultat.</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="mt-8 grid lg:grid-cols-[320px_1fr] gap-6">
+      <aside class="space-y-6">
+        <section class="panel p-5">
+          <h2 class="section-title">Plan du cours</h2>
+          <ol class="mt-4 space-y-3 text-sm text-slate-600 leading-7">
+            <li class="rounded-2xl border border-slate-200 bg-slate-50 p-4">1. Finalité de la comptabilité</li>
+            <li class="rounded-2xl border border-slate-200 bg-slate-50 p-4">2. Les principes comptables essentiels</li>
+            <li class="rounded-2xl border border-slate-200 bg-slate-50 p-4">3. Le cycle comptable complet</li>
+            <li class="rounded-2xl border border-slate-200 bg-slate-50 p-4">4. Le journal et le grand livre</li>
+            <li class="rounded-2xl border border-slate-200 bg-slate-50 p-4">5. Le bilan et le compte de résultat</li>
+            <li class="rounded-2xl border border-slate-200 bg-slate-50 p-4">6. Cas pratique corrigé</li>
+          </ol>
+        </section>
+
+        <section class="panel p-5">
+          <h2 class="section-title">Cheat sheet</h2>
+          <div class="mt-4 space-y-3 text-sm text-slate-600 leading-7">
+            <p><strong>Bilan</strong> = photo du patrimoine à une date donnée.</p>
+            <p><strong>Compte de résultat</strong> = film des produits et charges sur une période.</p>
+            <p><strong>Débit</strong> = souvent actif ou charge.</p>
+            <p><strong>Crédit</strong> = souvent passif ou produit.</p>
+            <p><strong>Amortissement</strong> = répartition du coût d'un bien durable.</p>
+          </div>
+        </section>
+
+        <section class="panel p-5">
+          <h2 class="section-title">Références</h2>
+          <div class="mt-4 space-y-3 text-sm leading-7">
+            <a href="https://entreprendre.service-public.fr/vosdroits/F21852" target="_blank" rel="noreferrer" class="block rounded-2xl border border-slate-200 bg-slate-50 p-4 hover:border-blue-300">Obligations comptables du commerçant</a>
+            <a href="https://entreprendre.service-public.fr/vosdroits/F31439" target="_blank" rel="noreferrer" class="block rounded-2xl border border-slate-200 bg-slate-50 p-4 hover:border-blue-300">Actif et passif</a>
+            <a href="https://www.vie-publique.fr/fiches/21839-comptabilite-de-caisse-et-comptabilite-dengagements" target="_blank" rel="noreferrer" class="block rounded-2xl border border-slate-200 bg-slate-50 p-4 hover:border-blue-300">Comptabilité de caisse et d'engagements</a>
+            <a href="https://www.anc.gouv.fr/plan-comptable-general-0" target="_blank" rel="noreferrer" class="block rounded-2xl border border-slate-200 bg-slate-50 p-4 hover:border-blue-300">Plan comptable général</a>
+          </div>
+        </section>
+      </aside>
+
+      <section class="space-y-6">
+        <article class="panel p-6 lg:p-8">
+          <h2 class="section-title">1. Finalité de la comptabilité</h2>
+          <div class="prose-lite mt-4">
+            <p>La comptabilité sert à enregistrer toutes les opérations de l'entreprise, à fournir une information fiable aux dirigeants et à produire des documents de synthèse utiles au pilotage et aux obligations légales.</p>
+            <p>Pour apprendre sérieusement, il faut retenir que la comptabilité ne se limite pas à “faire des comptes”. Elle suit une logique rigoureuse: identifier l'opération, choisir les comptes, déterminer le sens de l'écriture, enregistrer, contrôler, puis interpréter.</p>
+          </div>
+        </article>
+
+        <article class="panel p-6 lg:p-8">
+          <h2 class="section-title">2. Les principes comptables essentiels</h2>
+          <div class="mt-4 grid md:grid-cols-2 gap-4">
+            <div class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+              <h3 class="font-bold text-slate-900">Comptabilité d'engagement</h3>
+              <p class="mt-2 text-sm text-slate-600 leading-7">Les charges et produits sont rattachés à l'exercice où ils naissent, pas seulement au moment du paiement ou de l'encaissement.</p>
+            </div>
+            <div class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+              <h3 class="font-bold text-slate-900">Partie double</h3>
+              <p class="mt-2 text-sm text-slate-600 leading-7">Chaque opération touche au moins deux comptes: un débit et un crédit de même montant.</p>
+            </div>
+            <div class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+              <h3 class="font-bold text-slate-900">Prudence</h3>
+              <p class="mt-2 text-sm text-slate-600 leading-7">On n'anticipe pas des profits incertains, mais on constate les pertes probables.</p>
+            </div>
+            <div class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+              <h3 class="font-bold text-slate-900">Continuité d'exploitation</h3>
+              <p class="mt-2 text-sm text-slate-600 leading-7">On suppose, sauf preuve contraire, que l'entreprise poursuit son activité dans le temps.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="panel p-6 lg:p-8">
+          <h2 class="section-title">3. Le cycle comptable complet</h2>
+          <div class="mt-4 overflow-x-auto">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Étape</th>
+                  <th>Question à se poser</th>
+                  <th>Résultat attendu</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1. Collecte du justificatif</td>
+                  <td>Quel document prouve l'opération ?</td>
+                  <td>Facture, reçu, relevé bancaire, contrat.</td>
+                </tr>
+                <tr>
+                  <td>2. Analyse</td>
+                  <td>Que s'est-il passé exactement ?</td>
+                  <td>Nature de l'opération et comptes concernés.</td>
+                </tr>
+                <tr>
+                  <td>3. Écriture</td>
+                  <td>Quels comptes débiter et créditer ?</td>
+                  <td>Journal équilibré.</td>
+                </tr>
+                <tr>
+                  <td>4. Imputation</td>
+                  <td>Où classer l'opération ?</td>
+                  <td>Grand livre, balance, suivi analytique.</td>
+                </tr>
+                <tr>
+                  <td>5. Clôture</td>
+                  <td>Comment présenter la situation finale ?</td>
+                  <td>Bilan, compte de résultat, annexe.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+
+        <article class="panel p-6 lg:p-8">
+          <h2 class="section-title">4. Méthode pratique pour enregistrer une opération</h2>
+          <div class="mt-4 grid xl:grid-cols-[1fr_1fr] gap-6">
+            <div class="space-y-4">
+              <div class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+                <h3 class="font-bold text-slate-900">Étape A. Identifier la nature</h3>
+                <p class="mt-2 text-sm text-slate-600 leading-7">Exemple: achat, vente, apport, règlement, salaire, emprunt, amortissement.</p>
+              </div>
+              <div class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+                <h3 class="font-bold text-slate-900">Étape B. Déterminer l'effet économique</h3>
+                <p class="mt-2 text-sm text-slate-600 leading-7">L'opération augmente-t-elle un actif, diminue-t-elle une dette, crée-t-elle une charge ou un produit ?</p>
+              </div>
+              <div class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+                <h3 class="font-bold text-slate-900">Étape C. Choisir les comptes</h3>
+                <p class="mt-2 text-sm text-slate-600 leading-7">Exemple: banque, caisse, fournisseurs, clients, achats, ventes, TVA, capital, matériel.</p>
+              </div>
+              <div class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+                <h3 class="font-bold text-slate-900">Étape D. Passer l'écriture</h3>
+                <p class="mt-2 text-sm text-slate-600 leading-7">Débit d'un ou plusieurs comptes et crédit d'un ou plusieurs comptes pour le même montant.</p>
+              </div>
+            </div>
+
+            <div class="rounded-3xl border border-slate-200 bg-white p-5">
+              <h3 class="font-bold text-slate-900">Règle de base débit / crédit</h3>
+              <div class="mt-4 grid md:grid-cols-2 gap-4 text-sm">
+                <div class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+                  <p class="font-bold text-blue-700">On débite souvent</p>
+                  <ul class="mt-2 space-y-2">
+                    <li>un actif qui augmente</li>
+                    <li>une charge</li>
+                    <li>la baisse d'un passif</li>
+                  </ul>
+                </div>
+                <div class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+                  <p class="font-bold text-emerald-700">On crédite souvent</p>
+                  <ul class="mt-2 space-y-2">
+                    <li>un passif qui augmente</li>
+                    <li>un produit</li>
+                    <li>la baisse d'un actif</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="mt-4 text-sm text-slate-600 leading-7">
+                Cette règle devient naturelle avec la pratique. Le plus important est de comprendre la logique: ce que l'entreprise possède, ce qu'elle doit, ce qu'elle gagne et ce qu'elle dépense.
+              </p>
+            </div>
+          </div>
+          <div class="mt-6 grid lg:grid-cols-2 gap-4">
+            <div class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+              <h3 class="font-bold text-slate-900">Plan comptable en pratique</h3>
+              <p class="mt-2 text-sm text-slate-600 leading-7">Le plan comptable classe les comptes par grandes familles: classe 1 capitaux, 2 immobilisations, 3 stocks, 4 tiers, 5 trésorerie, 6 charges, 7 produits.</p>
+              <p class="mt-3 text-sm text-slate-600 leading-7">Méthode utile: demandez-vous si l'opération augmente un bien, une dette, une charge ou un produit. Ensuite choisissez la classe correspondante.</p>
+            </div>
+            <div class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+              <h3 class="font-bold text-slate-900">Lecture rapide d'un compte</h3>
+              <p class="mt-2 text-sm text-slate-600 leading-7">Un compte montre un type d'élément comptable. Son solde peut être débiteur ou créditeur selon sa nature. Le sens n'est pas arbitraire: il suit la logique économique de l'opération.</p>
+              <p class="mt-3 text-sm text-slate-600 leading-7">Exemple: un compte banque débiteur signifie généralement qu'il y a de la trésorerie disponible. Un compte fournisseur créditeur signifie une dette envers un tiers.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="panel p-6 lg:p-8">
+          <h2 class="section-title">5. Cas pratique interactif</h2>
+          <p class="mt-3 text-slate-600 leading-7">Choisissez une opération pour voir l'écriture comptable et la logique technique associée.</p>
+          <div class="mt-5 flex flex-wrap gap-3" id="txnButtons"></div>
+
+          <div class="mt-6 grid xl:grid-cols-[1fr_1fr] gap-6">
+            <div class="rounded-3xl border border-slate-200 bg-slate-50 p-5">
+              <h3 class="font-bold text-slate-900" id="txnTitle">Opération</h3>
+              <p class="mt-2 text-sm text-slate-600 leading-7" id="txnNarrative"></p>
+              <div class="mt-4 rounded-2xl border border-slate-200 bg-white p-4">
+                <p class="text-sm font-bold text-slate-900">Analyse</p>
+                <p class="mt-2 text-sm text-slate-600 leading-7" id="txnAnalysis"></p>
+              </div>
+            </div>
+
+            <div class="rounded-3xl border border-slate-200 bg-white p-5">
+              <h3 class="font-bold text-slate-900">Écriture au journal</h3>
+              <div class="table-wrap mt-4">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th>Débit</th>
+                      <th>Crédit</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td id="txnDebit"></td>
+                      <td id="txnCredit"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p class="mt-4 text-sm text-slate-600 leading-7" id="txnComment"></p>
+            </div>
+          </div>
+        </article>
+
+        <article class="panel p-6 lg:p-8">
+          <h2 class="section-title">6. Lecture des états financiers</h2>
+          <div class="mt-4 grid md:grid-cols-2 gap-4">
+            <div class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+              <h3 class="font-bold text-slate-900">Bilan</h3>
+              <p class="mt-2 text-sm text-slate-600 leading-7">Photo du patrimoine à une date donnée. On y lit l'actif, le passif et les capitaux propres.</p>
+            </div>
+            <div class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+              <h3 class="font-bold text-slate-900">Compte de résultat</h3>
+              <p class="mt-2 text-sm text-slate-600 leading-7">Film de l'activité sur une période. On y lit les produits, les charges, le bénéfice ou la perte.</p>
+            </div>
+          </div>
+          <div class="mt-5 overflow-x-auto">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Bilan</th>
+                  <th>Compte de résultat</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Ce que l'entreprise possède et doit.</td>
+                  <td>Ce que l'entreprise a gagné ou dépensé sur la période.</td>
+                </tr>
+                <tr>
+                  <td>Stabilité financière</td>
+                  <td>Performance économique</td>
+                </tr>
+                <tr>
+                  <td>Actif / Passif</td>
+                  <td>Produits / Charges</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+
+        <article class="panel p-6 lg:p-8">
+          <h2 class="section-title">7. Exercice corrigé</h2>
+          <p class="mt-3 text-slate-600 leading-7">
+            Cas: une entreprise reçoit 12 000 € de capital sur le compte bancaire. Ensuite elle achète du matériel pour 3 000 € HT à crédit, puis elle vend pour 2 000 € HT au comptant. TVA simplifiée non détaillée ici pour garder la première approche lisible.
+          </p>
+          <div class="mt-5 grid md:grid-cols-3 gap-4">
+            <div class="exercise-box">
+              <p class="font-bold text-slate-900">Question 1</p>
+              <p class="mt-2 text-sm text-slate-600 leading-7">Quels comptes interviennent lors de l'apport initial ?</p>
+            </div>
+            <div class="exercise-box">
+              <p class="font-bold text-slate-900">Question 2</p>
+              <p class="mt-2 text-sm text-slate-600 leading-7">Comment enregistrer l'achat du matériel à crédit ?</p>
+            </div>
+            <div class="exercise-box">
+              <p class="font-bold text-slate-900">Question 3</p>
+              <p class="mt-2 text-sm text-slate-600 leading-7">Comment enregistrer la vente au comptant ?</p>
+            </div>
+          </div>
+          <div class="mt-5 rounded-2xl border border-slate-200 bg-slate-50 p-5">
+            <p class="font-bold text-slate-900">Correction technique</p>
+            <p class="mt-2 text-sm text-slate-600 leading-7">
+              Apport initial: débit banque, crédit capital. Achat à crédit: débit immobilisations, crédit fournisseur. Vente au comptant: débit banque, crédit ventes. Ensuite, il faut contrôler le solde bancaire, la dette fournisseur et la valeur du matériel au bilan.
+            </p>
+          </div>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <script src="assets/js/site.js"></script>
+  <script>
+    const transactions = [
+      {
+        title: "Apport en capital",
+        narrative: "Le propriétaire verse 12 000 € sur le compte bancaire de l'entreprise au démarrage.",
+        analysis: "La banque augmente, donc on débite le compte Banque. Le capital est une ressource apportée par l'associé, donc on crédite le compte Capital.",
+        debit: "512 Banque : 12 000",
+        credit: "101 Capital : 12 000",
+        comment: "Écriture d'ouverture classique. Le bilan augmente à l'actif et au passif au même montant."
+      },
+      {
+        title: "Achat de matériel à crédit",
+        narrative: "L'entreprise achète un ordinateur professionnel pour 3 000 € HT et paie plus tard.",
+        analysis: "Le matériel est un actif immobilisé, donc on débite l'immobilisation. La dette envers le fournisseur augmente, donc on crédite le fournisseur.",
+        debit: "2183 Matériel informatique : 3 000",
+        credit: "401 Fournisseurs : 3 000",
+        comment: "On ne passe pas cette dépense en charge immédiatement si le bien sert durablement à l'activité."
+      },
+      {
+        title: "Vente au comptant",
+        narrative: "L'entreprise vend une prestation pour 2 000 € et encaisse immédiatement par banque.",
+        analysis: "L'argent disponible augmente, donc on débite Banque. La vente crée un produit, donc on crédite le compte de ventes.",
+        debit: "512 Banque : 2 000",
+        credit: "706 Prestations de services : 2 000",
+        comment: "Cette opération augmente le résultat de l'exercice si les charges associées restent inférieures."
+      },
+      {
+        title: "Paiement d'un fournisseur",
+        narrative: "L'entreprise règle une facture fournisseur de 1 500 € depuis la banque.",
+        analysis: "La dette fournisseur diminue, donc on débite le compte fournisseur. La banque baisse, donc on crédite Banque.",
+        debit: "401 Fournisseurs : 1 500",
+        credit: "512 Banque : 1 500",
+        comment: "Le paiement ne crée pas une charge nouvelle: la charge existait déjà à la réception de la facture."
+      }
+    ];
+
+    const btnWrap = document.getElementById("txnButtons");
+    const fields = {
+      title: document.getElementById("txnTitle"),
+      narrative: document.getElementById("txnNarrative"),
+      analysis: document.getElementById("txnAnalysis"),
+      debit: document.getElementById("txnDebit"),
+      credit: document.getElementById("txnCredit"),
+      comment: document.getElementById("txnComment")
+    };
+
+    function setTxn(index) {
+      const t = transactions[index];
+      fields.title.textContent = t.title;
+      fields.narrative.textContent = t.narrative;
+      fields.analysis.textContent = t.analysis;
+      fields.debit.textContent = t.debit;
+      fields.credit.textContent = t.credit;
+      fields.comment.textContent = t.comment;
+      btnWrap.querySelectorAll("button").forEach((btn, i) => {
+        btn.classList.toggle("bg-blue-600", i === index);
+        btn.classList.toggle("text-white", i === index);
+        btn.classList.toggle("border-blue-600", i === index);
+        btn.classList.toggle("bg-white", i !== index);
+        btn.classList.toggle("text-slate-700", i !== index);
+      });
+    }
+
+    btnWrap.innerHTML = transactions.map((t, i) => `
+      <button class="rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:border-blue-300 transition" type="button">${i + 1}. ${t.title}</button>
+    `).join("");
+
+    btnWrap.querySelectorAll("button").forEach((btn, i) => btn.addEventListener("click", () => setTxn(i)));
+    setTxn(0);
+  </script>
+</body>
+</html>

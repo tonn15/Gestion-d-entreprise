@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gestion de la production | Gestion d'entreprise</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body class="text-slate-900">
+  <div class="site-shell">
+    <header class="site-header p-6 lg:p-8">
+      <div class="flex flex-col gap-6">
+        <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-4">
+          <div>
+            <p class="chip">Module 7. Gestion de la production</p>
+            <h1 class="mt-4 text-4xl md:text-5xl font-black tracking-tight text-slate-ink leading-tight">Organiser le travail, maîtriser les stocks, assurer la qualité et sécuriser la logistique.</h1>
+            <p class="mt-4 max-w-4xl text-lg text-slate-600">Ce chapitre relie la théorie à l'opérationnel: comment produire sans rupture, sans gaspillage et avec un niveau de qualité acceptable pour le client.</p>
+          </div>
+          <nav class="site-nav">
+            <a class="nav-link" data-nav href="index.html">Accueil</a>
+            <a class="nav-link" data-nav href="parcours.html">Parcours complet</a>
+            <a class="nav-link" data-nav href="bases-entreprise.html">Bases</a>
+            <a class="nav-link" data-nav href="production.html">Production</a>
+            <a class="nav-link" data-nav href="controle-gestion.html">Contrôle de gestion</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="mt-8 grid lg:grid-cols-[320px_1fr] gap-6">
+      <aside class="space-y-6">
+        <section class="panel p-5">
+          <h2 class="section-title">Plan du chapitre</h2>
+          <ol class="mt-4 space-y-3 text-sm text-slate-600 leading-7">
+            <li class="rounded-2xl border border-slate-200 bg-slate-50 p-4">1. Organisation du travail</li>
+            <li class="rounded-2xl border border-slate-200 bg-slate-50 p-4">2. Gestion des stocks</li>
+            <li class="rounded-2xl border border-slate-200 bg-slate-50 p-4">3. Qualité</li>
+            <li class="rounded-2xl border border-slate-200 bg-slate-50 p-4">4. Logistique</li>
+            <li class="rounded-2xl border border-slate-200 bg-slate-50 p-4">5. Chaîne d'approvisionnement</li>
+          </ol>
+        </section>
+
+        <section class="panel p-5">
+          <h2 class="section-title">Cheat sheet</h2>
+          <div class="mt-4 space-y-3 text-sm text-slate-600 leading-7">
+            <p><strong>Organisation</strong> = répartir les tâches, postes et flux.</p>
+            <p><strong>Stock</strong> = sécurité contre la rupture, mais coût financier.</p>
+            <p><strong>Qualité</strong> = conformité au standard et aux attentes client.</p>
+            <p><strong>Logistique</strong> = approvisionnement, stockage, transport, livraison.</p>
+            <p><strong>Supply chain</strong> = ensemble coordonné des flux du fournisseur au client.</p>
+          </div>
+        </section>
+      </aside>
+
+      <section class="space-y-6">
+        <article class="panel p-6 lg:p-8">
+          <h2 class="section-title">1. Organisation du travail</h2>
+          <div class="prose-lite mt-4">
+            <p>Produire, ce n'est pas seulement fabriquer. Il faut organiser les tâches, les temps, les espaces et les responsabilités pour réduire les pertes, les erreurs et les retards.</p>
+            <p>Une bonne organisation commence par la cartographie du processus: quelles étapes, qui agit, avec quelles ressources, dans quel ordre, et avec quel standard de qualité ?</p>
+            <p>Le but est d'obtenir le bon niveau de production au bon moment, sans créer de goulots d'étranglement. Cette logique est utile autant dans une usine que dans un service ou un atelier.</p>
+          </div>
+        </article>
+
+        <article class="panel p-6 lg:p-8">
+          <h2 class="section-title">2. Gestion des stocks</h2>
+          <div class="mt-4 overflow-x-auto">
+            <table class="data-table">
+              <thead>
+                <tr><th>Problème</th><th>Effet</th><th>Réponse</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Stock trop faible</td><td>Rupture, retards, perte de ventes</td><td>Mieux prévoir, sécuriser l'approvisionnement</td></tr>
+                <tr><td>Stock trop élevé</td><td>Argent immobilisé, vieillissement, coût de stockage</td><td>Réduire les commandes, ajuster les volumes</td></tr>
+                <tr><td>Stock mal suivi</td><td>Erreurs, incohérences, pertes</td><td>Mettre un inventaire et un outil de suivi</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="mt-4 text-sm text-slate-600 leading-7">Le stock est un compromis entre disponibilité et coût. Le bon niveau dépend du délai fournisseur, de la demande et du coût de rupture.</p>
+          <div class="mt-5 overflow-x-auto">
+            <table class="data-table">
+              <thead><tr><th>Indicateur</th><th>Ce qu'il montre</th><th>Action possible</th></tr></thead>
+              <tbody>
+                <tr><td>Taux de rotation</td><td>Vitesse d'écoulement du stock</td><td>Ajuster les volumes</td></tr>
+                <tr><td>Rupture</td><td>Produits manquants</td><td>Sécuriser le réapprovisionnement</td></tr>
+                <tr><td>Surstock</td><td>Trop de stock immobilisé</td><td>Réduire les commandes</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+
+        <article class="panel p-6 lg:p-8">
+          <h2 class="section-title">3. Qualité</h2>
+          <div class="mt-4 grid xl:grid-cols-[1fr_1fr] gap-6">
+            <div class="rounded-3xl border border-slate-200 bg-slate-50 p-5">
+              <h3 class="font-bold text-slate-900">Définition opérationnelle</h3>
+              <p class="mt-2 text-sm text-slate-600 leading-7">La qualité est la conformité du produit ou du service aux attentes exprimées et implicites du client.</p>
+            </div>
+            <div class="rounded-3xl border border-slate-200 bg-white p-5">
+              <h3 class="font-bold text-slate-900">Outils</h3>
+              <p class="mt-2 text-sm text-slate-600 leading-7">Procédures, contrôles, standards, checklists, amélioration continue, retours clients, analyse des défauts.</p>
+            </div>
+          </div>
+          <div class="mt-5 rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <p class="font-bold text-slate-900">Outils qualité</p>
+            <p class="mt-2 text-sm text-slate-600 leading-7">Check-list, contrôle à réception, contrôle en cours de production, analyse des causes d'erreur, suivi des retours et corrections de procédure.</p>
+          </div>
+        </article>
+
+        <article class="panel p-6 lg:p-8">
+          <h2 class="section-title">4. Logistique et chaîne d'approvisionnement</h2>
+          <div class="mt-4 grid xl:grid-cols-[1fr_1fr] gap-6">
+            <div class="rounded-3xl border border-slate-200 bg-slate-50 p-5">
+              <h3 class="font-bold text-slate-900">Logistique</h3>
+              <p class="mt-2 text-sm text-slate-600 leading-7">La logistique couvre l'approvisionnement, le stockage, la préparation, le transport et la livraison. Elle vise le bon produit, au bon endroit, au bon moment.</p>
+            </div>
+            <div class="rounded-3xl border border-slate-200 bg-white p-5">
+              <h3 class="font-bold text-slate-900">Supply chain</h3>
+              <p class="mt-2 text-sm text-slate-600 leading-7">La chaîne d'approvisionnement relie les fournisseurs, les achats, la production, les entrepôts, le transport et le client final.</p>
+            </div>
+          </div>
+          <p class="mt-4 text-sm text-slate-600 leading-7">Une défaillance à un maillon peut désorganiser toute la chaîne. D'où l'intérêt de la coordination et des délais de sécurité.</p>
+          <div class="mt-5 overflow-x-auto">
+            <table class="data-table">
+              <thead><tr><th>KPI logistique</th><th>Signification</th><th>Usage</th></tr></thead>
+              <tbody>
+                <tr><td>OTIF</td><td>Livré à l'heure et complet</td><td>Mesure la fiabilité</td></tr>
+                <tr><td>Délai moyen</td><td>Temps d'approvisionnement ou de livraison</td><td>Optimiser la planification</td></tr>
+                <tr><td>Taux d'erreur</td><td>Commandes incorrectes</td><td>Améliorer le process</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+
+        <article class="panel p-6 lg:p-8">
+          <h2 class="section-title">5. Cas pratique</h2>
+          <div class="mt-4 grid xl:grid-cols-[1fr_1fr] gap-6">
+            <div class="rounded-3xl border border-slate-200 bg-slate-50 p-5">
+              <h3 class="font-bold text-slate-900">Situation</h3>
+              <p class="mt-2 text-sm text-slate-600 leading-7">Une petite entreprise de biscuits a des commandes irrégulières. Les stocks varient trop vite, les livraisons sont parfois en retard et la qualité n'est pas toujours stable.</p>
+            </div>
+            <div class="rounded-3xl border border-slate-200 bg-white p-5">
+              <h3 class="font-bold text-slate-900">Analyse attendue</h3>
+              <p class="mt-2 text-sm text-slate-600 leading-7">Il faut observer les flux, définir les niveaux de stock minimaux, standardiser les contrôles qualité et sécuriser les délais fournisseurs.</p>
+            </div>
+          </div>
+          <div class="mt-5 rounded-3xl border border-slate-200 bg-slate-50 p-5">
+            <p class="font-bold text-slate-900">Exercice</p>
+            <p class="mt-2 text-sm text-slate-600 leading-7">Expliquez la différence entre logistique et production. Puis décrivez un point de rupture possible dans une chaîne d'approvisionnement.</p>
+            <p class="mt-3 text-sm text-slate-600 leading-7">Correction: la production transforme, la logistique fait circuler et coordonne les flux. Un retard fournisseur ou une panne de transport peut bloquer l'ensemble.</p>
+          </div>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <script src="assets/js/site.js"></script>
+</body>
+</html>
